@@ -1,0 +1,91 @@
+/* Set character encoding to UTF-8 */
+@charset "UTF-8";
+
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Apply box-sizing border-box and set font family to Roboto for all elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style for header section */
+.header {
+    text-align: center;
+}
+
+/* Style for font size options in header */
+.header span {
+    padding: 5px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(28, 207, 227);
+}
+
+/* Font size variations for header span */
+.header .small {
+    font-size: 15px;
+}
+
+.header .medium {
+    font-size: 20px;
+}
+
+.header .large {
+    font-size: 25px;
+}
+
+/* Style for dark mode button */
+.header .dark {
+    border: 1px solid #333;
+    padding: 5px 10px;
+    background-color: grey;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style for light mode button */
+.header .light {
+    border: 1px solid #333;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Style for forms container */
+.forms {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Style for form inputs */
+.appointment_form input[type=text], input[type=datetime-local], input[type=time], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for form buttons */
+.appointment_form input[type=submit], input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for form submit button */
+.appointment_form input[type=submit]:hover {
+    background-color: rgb(255, 0, 0);
+}
